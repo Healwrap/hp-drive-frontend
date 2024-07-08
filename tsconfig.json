@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    "target": "es5", // 或者其他 ECMAScript 目标版本
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "noImplicitThis": true,
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "useDefineForClassFields": true,
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable",
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+//    "jsx": "react-jsx",
+    // 注意，这里可能需要根据实际情况进行修改
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "types": [
+      "vite/client"
+    ],
+    "baseUrl": ".",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "jsx": "react"
+  },
+  "include": [
+    "src",
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "vite.config.ts"
+  ],
+  "exclude": [
+    "src/**/__tests__/*"
+  ],
+}
